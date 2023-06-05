@@ -7,11 +7,11 @@ public class Laba16{
         boolean calculate(int x, int y);
     }
 
-    private static void selectionSort(int [] array, Operationable uslov) {
+    private static void selectionSort(int [] array, Operationable u) {
         for (int i = 0; i < array.length - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < array.length; j++) {
-                if (uslov.calculate(array[j], array[minIndex])) {
+                if (u.calculate(array[j], array[minIndex])) {
                     minIndex = j;
                 }
             }
